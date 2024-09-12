@@ -1,7 +1,8 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { ThemeProvider } from "./components/theme-provider";
 import HomePage from "./pages/HomePage";
-import Header from "./components/Header";
+
+import CountryPage from "./pages/CountryPage";
 
 export default function App() {
     return (
@@ -9,7 +10,7 @@ export default function App() {
             <BrowserRouter>
                 <Routes>
                     <Route path="/" element={<HomePage />} />
-                    <Route path="/country" element={<Header />} />
+                    <Route path="/country" element={<CountryPage />} />
                 </Routes>
             </BrowserRouter>
         </ThemeProvider>

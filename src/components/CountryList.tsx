@@ -73,7 +73,7 @@ export default function CountryList() {
     if (!countries || countries.length === 0) return <p>No countries found.</p>;
 
     return (
-        <div className="grid grid-cols-4 py-6 px-8 gap-8">
+        <div className="grid grid-cols-4 py-6 px-20 gap-20">
             {visibleCountries.map((country: countryType, index: number) => (
                 <Country
                     key={index}

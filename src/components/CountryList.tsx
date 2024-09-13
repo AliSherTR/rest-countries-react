@@ -1,5 +1,6 @@
 import { useEffect, useState, useRef } from "react";
 import Country from "./Country";
+import Loader from "./Loader";
 
 type countryType = {
     population: number;
@@ -69,7 +70,7 @@ export default function CountryList() {
         };
     }, [isLoading]);
 
-    if (isLoading && visibleCountries.length === 0) return <p>Loading.....</p>;
+    if (isLoading && visibleCountries.length === 0) return <Loader />;
     if (!countries || countries.length === 0) return <p>No countries found.</p>;
 
     return (

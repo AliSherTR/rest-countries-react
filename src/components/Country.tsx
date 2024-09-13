@@ -16,7 +16,7 @@ export default function Country({
     capital,
 }: countryProps) {
     return (
-        <Link to="/country">
+        <Link to={`/${name}`}>
             <div className=" flex flex-col overflow-hidden dark:bg-[#2b3945] transition-colors duration-300 rounded-xl shadow-md">
                 <img src={imageUrl} alt="" className="w-full h-[200px]" />
                 <div className=" dark:text-white p-6">

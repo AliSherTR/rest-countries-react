@@ -10,7 +10,7 @@ export default function App() {
             <BrowserRouter>
                 <Routes>
                     <Route path="/" element={<HomePage />} />
-                    <Route path="/country" element={<CountryPage />} />
+                    <Route path="/:name" element={<CountryPage />} />
                 </Routes>
             </BrowserRouter>
         </ThemeProvider>

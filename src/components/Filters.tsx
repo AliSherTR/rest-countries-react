@@ -17,15 +17,15 @@ export default function Filters({
     setSearchInupt,
 }: filtersInterface) {
     return (
-        <div className=" py-6 px-8 flex items-center justify-between">
+        <div className=" py-6 px-8 flex lg:flex-row flex-col lg:items-center space-y-5 items-start justify-between">
             <Input
                 placeholder="Search a country"
                 type="text"
                 onChange={(e) => setSearchInupt(e.target.value)}
-                className="focus:outline-none dark:bg-[#2b3945] max-w-[500px] w-full px-3 py-4 rounded-[5px]  focus:ring-2 focus:ring-blue-500 border -gray-300 "
+                className="focus:outline-none dark:bg-[#2b3945] lg:max-w-[500px] w-full px-3 py-4 rounded-[5px]  focus:ring-2 focus:ring-blue-500 border -gray-300 "
             />
             <Select onValueChange={(value: string) => setFilter(value)}>
-                <SelectTrigger className="w-[180px]">
+                <SelectTrigger className="lg:w-[180px] md:w-[250px] w-full">
                     <SelectValue
                         placeholder="Select By Region"
                         className=" box-content"

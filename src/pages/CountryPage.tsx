@@ -88,7 +88,7 @@ export default function CountryPage() {
     return (
         <div className="dark:bg-[#202c37] transition-colors duration-300 min-h-screen">
             <Header />
-            <div className="px-20 ">
+            <div className="lg:px-20  px-5">
                 <Link
                     to="/"
                     className=" px-3 py-4 w-36 flex items-center gap-2 mt-20 border-gray-200 justify-center rounded-xl dark:text-white dark:bg-[#2b3945]"
@@ -96,7 +96,7 @@ export default function CountryPage() {
                     <span>&larr;</span>
                     <span>Go Back</span>
                 </Link>
-                <div className=" grid grid-cols-2 gap-3 mt-10">
+                <div className=" grid lg:grid-cols-2 grid-cols-1 gap-3 mt-10">
                     <img
                         src={country.flags.svg}
                         alt=""
@@ -107,7 +107,7 @@ export default function CountryPage() {
                             {country.name.official}
                         </h1>
 
-                        <div className=" flex gap-56 w-full mb-4">
+                        <div className=" flex lg:flex-row flex-col lg:gap-56  w-full mb-4">
                             <div className="">
                                 <p className=" mb-4">
                                     {" "}

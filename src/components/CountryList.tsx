@@ -84,7 +84,7 @@ export default function CountryList({ region, searchInput }: CountryListProps) {
     if (!countries || countries.length === 0) return <p>No countries found.</p>;
 
     return (
-        <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 py-6 lg:px-20 md:px-14 px-5 gap-20 min-h-screen">
+        <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 py-6 lg:px-20 md:px-14 px-5 gap-20 min-h-screen relative z-10">
             {visibleCountries.map((country: countryType, index: number) => (
                 <Country
                     key={index}
